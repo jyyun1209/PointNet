@@ -10,37 +10,6 @@ import open3d as o3d
 
 import time
 
-
-# print("open3d gpu device count: ", o3d.cuda.device_count())
-
-# class ModelNetDataset(Dataset):
-# 	def __init__(self, root, name, split='train', num_points=2500):
-# 		self.root = root
-# 		self.name = name
-# 		self.split = split
-# 		self.num_points = num_points
-# 		self.transform = FixedPoints(self.num_points, replace=True, allow_duplicates=False)
-
-# 		if split == 'train':
-# 			self.dataset = ModelNet(root=root, name=name, train=True)
-# 		elif split == 'test':
-# 			self.dataset = ModelNet(root=root, name=name, train=False, transform=self.transform)
-# 		else:
-# 			raise ValueError('Invalid input of split')
-
-# 		self.classes = self.dataset.raw_file_names
-
-# 	def __len__(self):
-# 		return len(self.dataset)
-
-# 	def __getitem__(self, idx):
-# 		pts = self.dataset[idx].pos.T
-# 		# ids = torch.multinomial(torch.from_numpy(np.array(range(pts.shape[1]), dtype=np.float)), self.num_points, replacement=True)
-# 		# pts_selected = pts[:, ids]
-# 		pts_selected = pts
-
-# 		return pts_selected, self.dataset[idx].y
-
 class ModelNetDataset(Dataset):
 	def __init__(self, root, name, split='train', num_points=2500):
 		self.root = root
