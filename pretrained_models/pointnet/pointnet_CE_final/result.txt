@@ -1,0 +1,4 @@
+[CE]
+train accuracy:	95.98214285714286
+val accuracy:  95.79133064516128
+test accuracy:	92.07

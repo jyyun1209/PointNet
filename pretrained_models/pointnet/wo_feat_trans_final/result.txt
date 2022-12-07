@@ -1,0 +1,4 @@
+[wo_feat_transform]
+train accuracy:  96.79129464285714
+val accuracy:  96.29536290322581
+test accuracy:	85.46
